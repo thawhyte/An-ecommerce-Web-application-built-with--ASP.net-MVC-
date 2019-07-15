@@ -1,0 +1,144 @@
+﻿table.sorting tr:not(.home) {
+    cursor: pointer;
+}
+
+.ui-state-highlight {
+    border: 1px dashed #ccc;
+}
+
+div.new-cat {
+    margin-top: 30px;
+    position: relative;
+}
+
+span.ajax-text {
+    display: none;
+}
+
+table.sorting.categories td {
+    padding: 20px !important;
+}
+
+.ajaxdivtd {
+    position: absolute;
+}
+
+span.loader {
+    display: none;
+}
+
+span.ajaxmsg {
+    background: green;
+    color: white;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.ajaxcart {
+    position: relative;
+    top: 5px;
+}
+
+.ib {
+    display: inline-block !important;
+}
+
+ul.adminarea {
+    position: relative;
+    top: 15px;
+}
+
+.ajaxbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: none;
+    z-index: 1;
+}
+
+.ajaxbg span {
+    position: center;
+    top: 30%;
+    left: 50%;
+}
+
+form.paypalform {
+    position: absolute;
+    left: -2000px;
+}
+
+.row {
+    position: relative;
+}
+
+/*------login and registration styling----*/
+
+.login-page {
+    width: 360px;
+    padding: 50px 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background-color:black;
+    max-width: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+    .form .input-alt {
+        font-family: "Roboto", san-serif;
+        outline: 1;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .form .btn-alt {
+        font-family: "Roboto", san-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #f74877;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #ffffff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+        .form .btn-alt:hover, .form .btn-alt:active {
+            background: #f74878;
+        }
+
+    .form .message {
+        margin: 15px 0 0;
+        color: aliceblue;
+        font-size: 12px;
+    }
+
+        .form .message a {
+            color: brown;
+            text-decoration: none;
+        }
+
+    .form .register-form {
+        display: none;
+    }
+
+.input, .placeholder {
+    text-align: center;
+}
+
+.blog {
+    background-image: url(~/Images/bg-01.jpg);
+}

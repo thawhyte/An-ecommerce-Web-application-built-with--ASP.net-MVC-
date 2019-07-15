@@ -1,0 +1,55 @@
+﻿@model CmsShoppingCart.Models.ViewModels.Account.UserVM
+
+@{
+                /**/
+
+                ViewBag.Title = "Create Account";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="login-page">
+        <h2 class="text-center">Create an Account</h2>
+        <div class="form">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <form>
+                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "input-alt input", placeholder= "First Name" } })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+
+                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "input-alt input", placeholder= "Last Name" } })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+
+                @Html.EditorFor(model => model.EmailAddress, new { htmlAttributes = new { @class = "input-alt input", placeholder= "Email Address" } })
+                @Html.ValidationMessageFor(model => model.EmailAddress, "", new { @class = "text-danger" })
+
+                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "input-alt input", placeholder= "Username" } })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+
+                @Html.PasswordFor(model => model.Password, new { @class = "input-alt input", placeholder= "Password" })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "input-alt input" , placeholder= "Confirm Password" })
+                @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                <br />
+                <br />
+                <button class="btn-alt" type="submit" value="Create">Create </button>
+                <br />
+                <br />
+                &nbsp;
+                <p class="message">Already Registered? <a href="/account/login">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+}
+
+

@@ -1,0 +1,40 @@
+﻿@model CmsShoppingCart.Models.ViewModels.Cart.CartVM
+
+@*<div class="ajaxcart" style="color:white;">
+        Your cart: @Model.Quantity item(s) - $@Model.Price
+        <br />
+        @Html.ActionLink("Checkout", "Index")
+    </div>*@
+
+
+
+
+<div class="header-cart flex-col-l p-l-65 p-r-25">
+    <div class="header-cart-title flex-w flex-sb-m p-b-8">
+        <span class="mtext-103 cl2">
+            Your Cart
+        </span>
+
+        <div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
+            <i class="zmdi zmdi-close"></i>
+        </div>
+    </div>
+
+    <div class="header-cart-content flex-w js-pscroll ajcart">
+
+        <div class="w-full">
+            <div class="header-cart-total w-full p-tb-40">
+                Total: $@Model.Price
+            </div>
+
+            <div class="header-cart-buttons flex-w w-full">
+               
+                <a href="@Url.Action("Index", "Cart")" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10 text-center" style="color:white">
+                    View Cart
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
